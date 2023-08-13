@@ -3,6 +3,7 @@ package done.mm.qa.testcases;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import done.mm.qa.base.TestBase;
@@ -17,24 +18,25 @@ public class CreateNewPCTest extends TestBase {
 		super();
 	}
 
-	@BeforeMethod
+	@BeforeSuite
 	public void setup() throws InterruptedException {
 		initialization();
 		loginPages = new LoginPages();
 		po = new CreateNewPCPage();
+		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	@Test(invocationCount = 1)
+	@Test(invocationCount = 40)
 	public void createNewPc() throws Exception {
-		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
+		
 
 		po.CreatePC();
 
 	}
 
-	@AfterClass
-	public void tearDown() throws InterruptedException {
-		driver.quit();
-		Thread.sleep(2000);
-	}
+//	@AfterClass
+//	public void tearDown() throws InterruptedException {
+//		driver.quit();
+//		Thread.sleep(2000);
+//	}
 }

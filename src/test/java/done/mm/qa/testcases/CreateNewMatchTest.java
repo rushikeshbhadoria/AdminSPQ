@@ -37,9 +37,9 @@ public class CreateNewMatchTest extends TestBase {
 
 	}
 
-	@AfterClass
-	public void tearDown() throws InterruptedException {
-		driver.quit();
-		Thread.sleep(2000);
-	}
+//	@AfterClass
+//	public void tearDown() throws InterruptedException {
+//		driver.quit();
+//		Thread.sleep(2000);
+//	}
 }

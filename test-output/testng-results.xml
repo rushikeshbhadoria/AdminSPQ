@@ -2,66 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-17T11:02:19 IST" name="Default suite" finished-at="2023-02-17T11:03:25 IST" duration-ms="65823">
+  <suite started-at="2023-08-13T14:16:42 IST" name="Default suite" finished-at="2023-08-13T14:17:38 IST" duration-ms="55911">
     <groups>
     </groups>
-    <test started-at="2023-02-17T11:02:19 IST" name="Default test" finished-at="2023-02-17T11:03:25 IST" duration-ms="65823">
-      <class name="done.mm.qa.testcases.CreateNewPCTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@1be2019a]" started-at="2023-02-17T11:02:19 IST" name="setup" finished-at="2023-02-17T11:02:26 IST" duration-ms="6948" status="PASS">
+    <test started-at="2023-08-13T14:16:42 IST" name="Default test" finished-at="2023-08-13T14:17:38 IST" duration-ms="55911">
+      <class name="done.mm.qa.testcases.CompletePCOTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.CompletePCOTest@58e1d9d]" started-at="2023-08-13T14:16:42 IST" name="setup" finished-at="2023-08-13T14:17:00 IST" duration-ms="18119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewPc()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@1be2019a]" started-at="2023-02-17T11:02:26 IST" name="createNewPc" finished-at="2023-02-17T11:03:22 IST" duration-ms="56274" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+        <test-method signature="createMasterTest()[pri:0, instance:done.mm.qa.testcases.CompletePCOTest@58e1d9d]" started-at="2023-08-13T14:17:00 IST" name="createMasterTest" finished-at="2023-08-13T14:17:30 IST" duration-ms="29362" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[invalid argument: File not found : D:\SPQ\SPQAdminPanel\src\main\java\done\mm\qa\util\23.08.2022_16.07.43_REC.png
-  (Session info: chrome=109.0.5414.122)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-5AST0QG', ip: '192.168.109.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d0c8ab657ce5c7207eb8f58beacff2f7, sendKeysToElement {id=508784d0-fa27-463e-936a-3c4d43b8a033, value=[Ljava.lang.CharSequence;@47248a48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54814/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d0c8ab657ce5c7207eb8f58beacff2f7)] -> xpath: //input[@name='mobileIcon']]
-Session ID: d0c8ab657ce5c7207eb8f58beacff2f7]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Sign up with Google']' (tried for 5 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\SPQ\SPQAdminPanel\src\main\java\done\mm\qa\util\23.08.2022_16.07.43_REC.png
-  (Session info: chrome=109.0.5414.122)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-5AST0QG', ip: '192.168.109.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d0c8ab657ce5c7207eb8f58beacff2f7, sendKeysToElement {id=508784d0-fa27-463e-936a-3c4d43b8a033, value=[Ljava.lang.CharSequence;@47248a48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54814/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d0c8ab657ce5c7207eb8f58beacff2f7)] -> xpath: //input[@name='mobileIcon']]
-Session ID: d0c8ab657ce5c7207eb8f58beacff2f7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:414)
-at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:439)
-at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
-at done.mm.qa.base.TestBase.sendKey(TestBase.java:85)
-at done.mm.qa.pages.CreateNewPCPage.CreatePC(CreateNewPCPage.java:126)
-at done.mm.qa.testcases.CreateNewPCTest.createNewPc(CreateNewPCTest.java:31)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Sign up with Google']' (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at done.mm.qa.base.TestBase.clickOn(TestBase.java:57)
+at done.mm.qa.pages.LoginPages.Login(LoginPages.java:55)
+at done.mm.qa.testcases.CompletePCOTest.createMasterTest(CompletePCOTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,17 +51,60 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sign up with Google']"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-5AST0QG', ip: '192.168.84.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d649cfc6bc9c7cba77edb4da2e707d53, findElement {using=xpath, value=//div[text()='Sign up with Google']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63435/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d649cfc6bc9c7cba77edb4da2e707d53
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+at jdk.proxy2/jdk.proxy2.$Proxy16.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewPc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@1be2019a]" started-at="2023-02-17T11:03:22 IST" name="tearDown" finished-at="2023-02-17T11:03:25 IST" duration-ms="2532" status="PASS">
+        </test-method> <!-- createMasterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.CompletePCOTest@58e1d9d]" started-at="2023-08-13T14:17:30 IST" name="tearDown" finished-at="2023-08-13T14:17:38 IST" duration-ms="8275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.CreateNewPCTest -->
+      </class> <!-- done.mm.qa.testcases.CompletePCOTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

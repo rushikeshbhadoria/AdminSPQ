@@ -24,12 +24,12 @@ public class PCMUpdateTest extends TestBase {
 		super();
 	}
 
-	@BeforeMethod
-	public void setup() throws InterruptedException {
-		initialization();
-		loginPages = new LoginPages();
-		pcm = new PCSMUpdatePage();
-	}
+//	@BeforeMethod
+//	public void setup() throws InterruptedException {
+//		initialization();
+//		loginPages = new LoginPages();
+//		pcm = new PCSMUpdatePage();
+//	}
 
 	@Test(invocationCount = 1)
 	public void statusupdate() throws Exception {
@@ -40,9 +40,9 @@ public class PCMUpdateTest extends TestBase {
 
 	}
 
-	@AfterClass
-	public void tearDown() throws InterruptedException {
-		driver.quit();
-		Thread.sleep(2000);
-	}
+//	@AfterClass
+//	public void tearDown() throws InterruptedException {
+//		driver.quit();
+//		Thread.sleep(2000);
+//	}
 }

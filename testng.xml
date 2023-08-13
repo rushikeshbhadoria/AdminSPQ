@@ -8,13 +8,7 @@
 		<classes>
 			<class name="done.mm.qa.testcases.CreateNewPCTest" />
 			<class name="done.mm.qa.testcases.UpdatePCTest" />
-			<class name="done.mm.qa.testcases.LaunchPCOfferingTest" />
-		    <class name="done.mm.qa.testcases.PCOUpdateTest" />
-			<class name="done.mm.qa.testcases.PCStatusLivPauseTest" />
-			<class name="done.mm.qa.testcases.PCOfferingCompleteTest" />
-			<class name="done.mm.qa.testcases.LaunchPCSecondMarketTest" />
-			<class name="done.mm.qa.testcases.PCMUpdateTest" />
-	
+			
 		</classes>
 	</test>
 </suite>

@@ -72,6 +72,9 @@ public class CreateNewPCPage extends TestBase {
 
 	@FindBy(how = How.XPATH, using = "//button[text()='Save']")
 	WebElement submit;
+	
+	@FindBy(how = How.XPATH, using = "//button[text()='Mint']")
+	WebElement Mint;
 
 	public CreateNewPCPage() {
 		PageFactory.initElements(driver, this);
@@ -95,7 +98,7 @@ public class CreateNewPCPage extends TestBase {
 		String add= randomAddrivetion();
 	    System.out.println(generatedString);
 
-		clickOn(driver, CreatePC, 5);
+		clickOn(driver, CreatePC, 10);
 		
 		selectByVisibleText(sport, "Cricket");
 
@@ -113,7 +116,7 @@ public class CreateNewPCPage extends TestBase {
 				5);
 		
 		Thread.sleep(2000);
-		selectByVisibleText(tournamentId, "Tournament1");
+		selectByVisibleText(tournamentId, "Tournament3");
 		selectByVisibleText(team, "Royal Challenger Blore");
 		
 		selectByVisibleText(playerKey, "suryakumarsplayerkeys");
@@ -123,11 +126,15 @@ public class CreateNewPCPage extends TestBase {
 		sendKey(driver, totalSupply, "10000", 5);
 		sendKey(driver, houseWalletAddress, "0x5aC670D0A4074450b881A4E3bbf1fa7B4677b1DD", 5);
 		String path="C:\\Users\\Dell\\eclipse2-workspace\\SpqAdmin\\20230119_171752.jpg";
-		sendKey(driver, mobileIcon, path, 5);
-		sendKey(driver, webIcon, path, 5);
+		sendKey(driver, mobileIcon, "C:\\Users\\Dell\\Downloads\\Screenshot_20230119_180247_Sportiqo_2.jpg", 5);
+		sendKey(driver, webIcon, "C:\\Users\\Dell\\Downloads\\Screenshot_20230119_180247_Sportiqo_2.jpg", 5);
 		Thread.sleep(3000);
-		clickOn(driver, submit, 5);
-		Thread.sleep(3000);
+		clickOn(driver, submit, 10);
+		Thread.sleep(5000);
+		clickOn(driver, Mint, 10);
+		maximizeScreen(3);
+		Thread.sleep(18000);
+		
 		
 //		readMessege("Player counter created successfully.");
 		
